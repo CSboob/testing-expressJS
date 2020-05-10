@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 const port = 3000
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json()) // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 var users1 =[
     {id: 1, name: 'Huy' },
@@ -27,7 +31,14 @@ app.set('views', './views');
      res.render('users/index',{
          users: matchedUsers
     });
-
  });
+
+//app truy cap vo /users/create res se render file create.pug
+ app.get('/users/create', (req, res) => res.render('users/create'));    
+//
+ app.post('/users/create', (req, res) => {
+     users1.push(req.body);
+     res.redirect('/users');
+});
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
