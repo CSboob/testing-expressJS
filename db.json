@@ -1,36 +1,16 @@
 {
   "users": [
     {
+      "name": "18520820",
+      "id": "bHoSpnKq8"
+    },
+    {
+      "name": "18521029",
+      "id": "6SjZKdCQo"
+    },
+    {
       "name": "test",
-      "id": "olEzwqP4N"
-    },
-    {
-      "name": "abc",
-      "id": "xrJcbupP-"
-    },
-    {
-      "name": "huy",
-      "id": "htvzScK3e"
-    },
-    {
-      "name": "long",
-      "id": "xKDZEeEdi"
-    },
-    {
-      "name": "kiene",
-      "id": "-GFW8kUnn"
-    },
-    {
-      "name": "18521226",
-      "id": "nLdaq4p6C"
-    },
-    {
-      "name": "18521064",
-      "id": "ZwWtRZv9B"
-    },
-    {
-      "name": "18521064",
-      "id": "0Zqns8Js5"
+      "id": "oWK3OVP3K"
     }
   ]
 }
