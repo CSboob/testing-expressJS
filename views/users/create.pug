@@ -1,9 +1,27 @@
-h1 Create user
+extends ../layouts/common
 
-form(action="/users/create", method="POST")
-    label Name
-    //name hay Name deu la tham so chi value dien vao trong input. Trong ""la ten key
-    input(name="name", type="text")
+block content
+  h1 Create user
 
+  if errors 
+    each error in errors
+      .alert.alert-danger= error
+  
+  form(action="/users/create", method="POST", class="my-2 my-lg-0")
+      .form-group    
+        label(for="name") Name
+        input#name.form-control(name="name", type="text", 
+        placeholder="Enter new user....", aria-label="Create", value=values ? values.name : '')
+        span &nbsp;
+        
+      .form-group    
+        label(for="phone") Phone
+        input#phone.form-control(name="phone", type="text", 
+        placeholder="Enter your phone....", aria-label="Create", value=values ? values.phone : '')
+        span &nbsp;
+      
+      button.btn.btn-outline-success Create
 
-    button Create
+       
+
+        //- 

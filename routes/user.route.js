@@ -4,14 +4,14 @@ var router = express.Router();
 var controller = require('../controllers/user.controller');
 
 
-router.get('/users', controller.index);
+router.get('/', controller.index);
 
-router.get('/users/search', controller.search);
+router.get('/search', controller.search);
 
-router.get('/users/create', controller.create); 
+router.get('/create', controller.create); 
 
-router.post('/users/create',controller.postCreate);
+router.post('/create',controller.postCreate);
 
- router.get('/users/:id', controller.viewId);
+ router.get('/:id', controller.viewId);
 
 module.exports = router;
