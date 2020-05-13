@@ -5,29 +5,16 @@
       "id": "bHoSpnKq8"
     },
     {
-      "name": "18521029",
-      "id": "6SjZKdCQo"
-    },
-    {
-      "name": "test",
-      "id": "oWK3OVP3K"
-    },
-    {
-      "name": "18520952",
-      "id": "_I56rBASP"
-    },
-    {
-      "name": "new user",
-      "id": "Rq4I_zPMv"
-    },
-    {
-      "name": "test2",
-      "id": "MoS2r7YZ-"
-    },
-    {
       "name": "huy2",
       "phone": "0819002023",
-      "id": "JwKvWXDrX"
+      "id": "JwKvWXDrX",
+      "email": "huynhatdev21@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "18520820",
+      "phone": "123",
+      "id": "ui1bN7_ek"
     }
   ]
 }

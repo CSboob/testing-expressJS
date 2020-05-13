@@ -1,0 +1,25 @@
+extends ../layouts/common.pug 
+
+block content
+  h1 Login
+
+  if errors 
+    each error in errors
+      .alert.alert-danger= error
+  
+  form(action="/auth/login", method="POST", class="my-2 my-lg-0")
+      .form-group    
+        label(for="email") Email
+        input#email.form-control(name="email", type="text", 
+        placeholder="Enter your email....", aria-label="Create", value=values ? values.email : '')
+        span &nbsp;
+        
+      .form-group    
+        label(for="password") Password
+        input#password.form-control(name="password", type="text", 
+        placeholder="Enter your password....", aria-label="Create", value=values ? values.password : '')
+        span &nbsp;
+      
+      button.btn.btn-outline-success Login
+
+       
