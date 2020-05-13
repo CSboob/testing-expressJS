@@ -23,6 +23,7 @@ module.exports.search = (req, res) => {
 }
 
 module.exports.create = (req, res) => {
+    console.log(req.cookies);
     res.render('users/create')
 }
 
@@ -38,7 +39,7 @@ module.exports.viewId = (req, res) => {
     var id = req.params.id;
     //get key users trong db.json theo id dong tren
     var userViewing = db.get('users').find({id: id}).value();
-    
+
     res.render('users/view',{
         user: userViewing
     });
