@@ -13,7 +13,7 @@ var port = 3000;
 
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
-app.use(cookieParser())
+app.use(cookieParser('asdsadjk2132lj'))
 
 app.use(express.static('public'))
 
